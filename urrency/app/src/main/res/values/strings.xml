@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Валюта</string>
+    <string name="name_currency">Наименование</string>
+    <string name="code">Код</string>
+    <string name="rub">RUB</string>
+    <string name="sum_rub">Введите сумму в рублях</string>
+    <string name="currencyList">Currency</string>
+    <string name="currentDate">Дата</string>
+    <string name="sum_currency">Сумма в валюте</string>
+    <string name="tv_date">Дата</string>
+    <string name="current_rate_ex">Курс/RUB</string>
+    <string name="empty">0</string>
+    <string name="tvNameTitle">Курс ЦБ РФ на:</string>
+
+</resources>

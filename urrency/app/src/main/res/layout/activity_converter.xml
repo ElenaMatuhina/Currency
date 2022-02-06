@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:drawable/gallery_thumb"
+    tools:context=".Converter">
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_date"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/currentDate"
+        app:layout_constraintStart_toStartOf="@+id/tvCurrency"
+        app:layout_constraintTop_toTopOf="@+id/currentDate" />
+
+    <TextView
+        android:id="@+id/currentDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/currentDate"
+        android:textColor="@color/purple_700"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/currentRateEx"
+        app:layout_constraintStart_toStartOf="@+id/currentRateEx"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.117" />
+
+    <TextView
+        android:id="@+id/currentRate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/current_rate_ex"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/date"
+        app:layout_constraintTop_toBottomOf="@+id/date" />
+
+    <TextView
+        android:id="@+id/currentRateEx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="100dp"
+        android:hint="@string/current_rate_ex"
+        android:textColor="@color/purple_700"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/currentRate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/currentRate"
+        app:layout_constraintTop_toTopOf="@+id/currentRate"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvRub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="460dp"
+        android:text="@string/rub"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tvCurrency"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvCurrency"
+        app:layout_constraintTop_toBottomOf="@+id/currentRate" />
+
+    <EditText
+        android:id="@+id/tvSumChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/sum_rub"
+        android:inputType="number"
+        android:textColor="@color/purple_700"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvRub"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/currentRateEx"
+        app:layout_constraintTop_toTopOf="@+id/tvRub"
+        app:layout_constraintVertical_bias="0.476" />
+
+    <TextView
+        android:id="@+id/tvCurrency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:text="@string/currencyList"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRub"
+        app:layout_constraintVertical_bias="0.09" />
+
+    <TextView
+        android:id="@+id/tvResultCurrency"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/empty"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvCurrency"
+        app:layout_constraintEnd_toEndOf="@+id/tvSumChange"
+        app:layout_constraintStart_toStartOf="@+id/tvSumChange"
+        app:layout_constraintTop_toTopOf="@+id/tvCurrency" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
