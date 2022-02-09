@@ -10,6 +10,15 @@ public class CurrencyList {
     private String name;
     private String code;
     private String value;
+    private String nominal;
+
+    public String getNominal() {
+        return nominal;
+    }
+
+    public void setNominal(String nominal) {
+        this.nominal = nominal;
+    }
 
     public int getId() {
         return id;

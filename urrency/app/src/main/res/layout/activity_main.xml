@@ -55,14 +55,13 @@
         app:layout_constraintTop_toBottomOf="@id/tvViewTitle" />
 
     <TextView
-        android:id="@+id/tvCodeTitle"
-        android:layout_width="50dp"
+        android:id="@+id/tvNominalTitle"
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:paddingStart="10dp"
         android:gravity="center"
+        android:paddingStart="10dp"
         android:singleLine="false"
-        android:text="@string/code"
+        android:text="@string/nominal"
         android:textColor="#3F51B5"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/tvNameTitle"
@@ -82,11 +81,11 @@
         android:text="@string/current_rate_ex"
         android:textColor="#3F51B5"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/tvCodeTitle"
+        app:layout_constraintBottom_toBottomOf="@+id/tvNominalTitle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/tvCodeTitle"
-        app:layout_constraintTop_toTopOf="@+id/tvCodeTitle"
+        app:layout_constraintStart_toEndOf="@+id/tvNominalTitle"
+        app:layout_constraintTop_toTopOf="@+id/tvNominalTitle"
         app:layout_constraintVertical_bias="1.0" />
 
     <LinearLayout

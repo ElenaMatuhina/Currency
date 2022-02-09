@@ -38,6 +38,7 @@ public class JSONUtils {
             ArrayList<String> filterKey = new ArrayList<>();
             ArrayList<String> filterCode = new ArrayList<>();
             ArrayList<String> filterValue = new ArrayList<>();
+            ArrayList<String> filterNominal= new ArrayList<>();
             for (String item : total) {
                 String[] pairs = item.split(",");
                 for (int i = 0; i < pairs.length; i++) {
@@ -58,11 +59,14 @@ public class JSONUtils {
                         .stream().filter(x -> x.getKey().equals("\"Value\""))
                         .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
 
+                Map filteredNominal = map.entrySet()
+                        .stream().filter(x -> x.getKey().equals("\"Nominal\""))
+                        .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
 
                 filteredMap.forEach((keyFil, valueFil) -> filterKey.add((String) valueFil));
                 filteredCode.forEach((keyFil, valueFil) -> filterCode.add((String) valueFil));
                 filteredValue.forEach((keyFil, valueFil) -> filterValue.add((String) valueFil));
-
+                filteredNominal.forEach((keyFil, valueFil) -> filterNominal.add((String) valueFil));
             }
 
             for(int i = 0; i < filterKey.size(); i++) {
@@ -70,6 +74,7 @@ public class JSONUtils {
                 currency.setName(filterKey.get(i).replace("\"", ""));
                 currency.setCode(filterCode.get(i).replace("\"", ""));
                 currency.setValue(filterValue.get(i));
+                currency.setNominal(filterNominal.get(i));
                 currencyList.add(currency);
             }
 

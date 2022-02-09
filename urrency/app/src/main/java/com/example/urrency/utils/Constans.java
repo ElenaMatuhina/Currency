@@ -7,5 +7,6 @@ public class Constans {
     public static final String CODE_CURRENCY = "code_currency";
     public static final String CURRENT_DATE = "Date";
     public static final String EXCHANGE_RATE = "exchange_rate";
+    public static final String NOMINAL = "nominal";
 }
 

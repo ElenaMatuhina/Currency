@@ -72,7 +72,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="@string/sum_rub"
-        android:inputType="number"
+        android:inputType="numberSigned|number"
         android:textColor="@color/purple_700"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/tvRub"
@@ -80,7 +80,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/currentRateEx"
         app:layout_constraintTop_toTopOf="@+id/tvRub"
-        app:layout_constraintVertical_bias="0.476" />
+        app:layout_constraintVertical_bias="0.38" />
 
     <TextView
         android:id="@+id/tvCurrency"

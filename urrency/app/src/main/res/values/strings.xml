@@ -2,6 +2,7 @@
     <string name="app_name">Валюта</string>
     <string name="name_currency">Наименование</string>
     <string name="code">Код</string>
+    <string name="nominal">Номинал</string>
     <string name="rub">RUB</string>
     <string name="sum_rub">Введите сумму в рублях</string>
     <string name="currencyList">Currency</string>

@@ -26,7 +26,7 @@
         app:layout_constraintVertical_bias="0.060000002" />
 
     <TextView
-        android:id="@+id/tvCode"
+        android:id="@+id/tvNominal"
         android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -53,11 +53,11 @@
         android:paddingBottom="5dp"
         android:text="@string/current_rate_ex"
         android:textColor="#3F51B5"
-        app:layout_constraintBottom_toBottomOf="@+id/tvCode"
+        app:layout_constraintBottom_toBottomOf="@+id/tvNominal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/tvCode"
-        app:layout_constraintTop_toTopOf="@+id/tvCode"
+        app:layout_constraintStart_toEndOf="@+id/tvNominal"
+        app:layout_constraintTop_toTopOf="@+id/tvNominal"
         app:layout_constraintVertical_bias="1.0" />
 
     <LinearLayout

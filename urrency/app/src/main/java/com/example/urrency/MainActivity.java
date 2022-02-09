@@ -57,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra(Constans.VALUTE, currencyList.get(position).getName());
                 intent.putExtra(Constans.CODE_CURRENCY, currencyList.get(position).getCode());
                 intent.putExtra(Constans.EXCHANGE_RATE, currencyList.get(position).getValue());
+                intent.putExtra(Constans.NOMINAL, currencyList.get(position).getNominal());
                 intent.putExtra(Constans.CURRENT_DATE, date.substring(0, 10));
                 startActivity(intent);
             }

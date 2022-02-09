@@ -51,23 +51,23 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         TextView nameCurrency;
-        TextView codeCurrency;
         TextView valueCurrency;
+        TextView nominalCurrency;
         private AdapterOnClickedItem adapterOnClickedItem;
 
         public ViewHolder(@NonNull @NotNull View itemView, AdapterOnClickedItem adapterOnClickedItem) {
             super(itemView);
             nameCurrency = itemView.findViewById(R.id.tvNameCurrency);
-            codeCurrency = itemView.findViewById(R.id.tvCode);
             valueCurrency = itemView.findViewById(R.id.tvValue);
+            nominalCurrency = itemView.findViewById(R.id.tvNominal);
             this.adapterOnClickedItem = adapterOnClickedItem;
             itemView.setOnClickListener(this);
         }
 
         public void setData(CurrencyList currencyList) {
             nameCurrency.setText(currencyList.getName());
-            codeCurrency.setText(currencyList.getCode());
             valueCurrency.setText(currencyList.getValue());
+            nominalCurrency.setText(currencyList.getNominal());
         }
 
         @Override
